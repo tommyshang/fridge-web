@@ -28,12 +28,12 @@
 <nav><a href="./">← Fridge</a></nav>
 
 <h1>Privacy Policy</h1>
-<p class="muted"><em>Last updated: 2026-09-03</em></p>
+<p class="muted"><em>Last updated: 2026-11-08</em></p>
 
 <p>Fridge ("the app") is a fridge/pantry inventory tracker. This policy explains what data the app touches and how it is used.</p>
 
 <h2>Data the app collects</h2>
-<p>The app does <strong>not</strong> require an account, does <strong>not</strong> use analytics, advertising, or crash-reporting SDKs, and does <strong>not</strong> transmit your inventory data to any server.</p>
+<p>The app does <strong>not</strong> require an account, does <strong>not</strong> include advertising or crash-reporting SDKs, and does <strong>not</strong> transmit your inventory data to any server. Barcode and text scanning use Google ML Kit, which reads your camera images on your device and sends limited diagnostics to Google, as listed below.</p>
 
 <table>
 <tr><th>Data type</th><th>Collected?</th><th>Stored where</th><th>Shared with third parties?</th></tr>
@@ -43,15 +43,16 @@
 <tr><td>App settings / preferences</td><td>Yes</td><td>Local device storage</td><td>No</td></tr>
 <tr><td>Local notifications (expiration reminders)</td><td>Generated on-device</td><td>Not transmitted anywhere</td><td>No</td></tr>
 <tr><td>Product barcode (when you scan a product)</td><td>Sent to Open Food Facts (openfoodfacts.org), a public open database, to look up product name/details</td><td>N/A — processed by Open Food Facts</td><td>Sent only to Open Food Facts; see their <a href="https://world.openfoodfacts.org/privacy">privacy policy</a></td></tr>
+<tr><td>Scanner diagnostics from Google ML Kit (device model and OS version, app package name and version, performance metrics, error codes, per-installation identifiers)</td><td>Sent to Google over HTTPS to diagnose and measure the scanner. Camera images and your inventory are not included.</td><td>N/A — processed by Google</td><td>Sent only to Google; see the <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a></td></tr>
 </table>
 
 <h2>What we do not do</h2>
 <ul>
-<li>No user accounts, sign-in, or personal identifiers collected</li>
+<li>No user accounts or sign-in, and no names, email addresses, or other personal details collected</li>
 <li>No advertising or ad tracking</li>
-<li>No analytics or usage tracking</li>
+<li>No analytics of our own; the only usage data sent is the Google ML Kit diagnostics described above</li>
 <li>No sale of data to third parties</li>
-<li>No data leaves your device except the anonymous barcode lookup described above</li>
+<li>No data leaves your device except the barcode lookup and Google ML Kit diagnostics described above</li>
 </ul>
 
 <h2>Permissions used</h2>
@@ -62,7 +63,7 @@
 </ul>
 
 <h2>Data retention &amp; deletion</h2>
-<p>All inventory data lives in a local database on your device. Uninstalling the app deletes all locally stored data. There is no server-side account to delete.</p>
+<p>All inventory data lives in a local database on your device. Uninstalling the app deletes all locally stored data. There is no server-side account to delete. Barcode lookups and Google ML Kit diagnostics are handled by Open Food Facts and Google under their own policies, and cannot be deleted from within the app.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the "Last updated" date above will be revised.</p>
